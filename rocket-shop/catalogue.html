@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header">
+    <div class="header__top page">
+        <div class="page__content">
+            <div class="header__main-nav">
+                <ul class="list-inline">
+                    <li class="list-inline__item">
+                        <select class="list-inline__select">
+                            <option value="" class="list-inline__item">Алматы</option>
+                            <option value="" class="list-inline__item">Астана</option>
+                            <option value="" class="list-inline__item">Тараз</option>
+                            <option value="" class="list-inline__item">Чимкент</option>
+                        </select>
+                    </li>
+                    <li class="list-inline__item"><a class="list-inline__link" href="#">Оплата и отправка</a></li>
+                    <li class="list-inline__item"><a class="list-inline__link" href="#">О возврате товара</a></li>
+                    <li class="list-inline__item">По любым вопросам: +7 727 237-98-53 и +7 707 237-98-54</li>
+                </ul>
+                <button class="button button_white button_small">Заказать звонок</button>
+                <a class="header__language" href="#">Қазақша</a>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="page-content">
+        <div class="header__main">
+            <div class="input header__main-input">
+                <input type="text" class="input__main" placeholder="Поиск">
+            </div>
+            <a href="/" class="header__logo">
+                <img class="header__logo_img" src="../../../assets/img/header/header-logo.png" alt="rocket-logo" width="280">
+            </a>
+            <ul class="header__list">
+                <li><a href="#" class="header__login">Войти</a></li>
+                <li>
+                    <button class="button button_white button_left-ico button_basket" onclick="basketDisplay()" id="basket_icon"><i class="rocket-shop-bag button__ico_medium button__ico_left-ico"></i>Корзина <div class="button__circle-text">3</div></button>
+                    <div class="basket hide" id="basket">
+    <div class="h3">3 товара в корзине</div>
+        <div class="product-list basket__list">
+            <div class="product-list__item">
+                <div  class="product-list__img">
+                    <img src="../../../assets/img/cart/cart_shea-formula.png" alt="shea-formula" width="70">
+                </div>
+                <div>
+                    <a class="item__link" href="">
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">PALMER'S</span>
+                        </div>
+                    </a>
+                    <p class="product-list__description basket__info">Увлажняющий бальзам для тела Shea Formula</p>
+                </div>
+            </div>
+            <div class="product-list__price">
+                <div class="product-amount product-amount__cart basket__price">1 шт.</div>
+                <div class="product-list__price-value"><span class="price basket__price">18760</span><br>₸</div>
+                <a href="#" class="product-list__close basket__close"><i class="rocket-close-2"></i></a>
+            </div>
+        </div>
+        <div class="product-list basket__list">
+            <div class="product-list__item">
+                <div  class="product-list__img">
+                    <img src="../../../assets/img/cart/cart_mont-blanc.png" alt="mont-blanc" width="70">
+                </div>
+                <div>
+                    <a class="item__link" href="">
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">MONTBLANC</span>
+                        </div>
+                    </a>
+                    <p class="product-list__description basket__info">Туалетная вода LEGEND, EDT</p>
+                </div>
+            </div>
+            <div class="product-list__price">
+                <div class="product-amount product-amount__cart basket__price">1 шт.</div>
+                <div class="product-list__price-value"><span class="price basket__price">18760</span><br>₸</div>
+                <a href="#" class="product-list__close basket__close"><i class="rocket-close-2"></i></a>
+            </div>
+        </div>
+        <div class="product-list basket__list">
+            <div class="product-list__item">
+                <div  class="product-list__img">
+                    <img src="../../../assets/img/cart/cart_clinique.png" alt="clinique" width="70">
+                </div>
+                <div>
+                    <a class="item__link" href="">
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">CLINIQUE</span>
+                        </div>
+                    </a>
+                    <p class="product-list__description basket__info">Помада для губ Pop Lip Colour + Primer</p>
+                </div>
+            </div>
+            <div class="product-list__price">
+                <div class="product-amount product-amount__cart basket__price">1 шт.</div>
+                <div class="product-list__price-value"><span class="price basket__price">5850</span><br>₸</div>
+                <a href="#" class="product-list__close  basket__close"><i class="rocket-close-2"></i></a>
+            </div>
+        </div>
+    <br>
+    <div><button class="button button_large">Оформить заказ</button><p class="basket__total">Итого — <span class="price basket__price basket__price_pink">44760</span><span class="basket__price basket__price_pink">₸</span></p></div>
+</div>
+                </li>
+            </ul>
+        </div>
+        <div class="dropdown header__bottom">
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Парфюмерия<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Макияж<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Уход за кожей<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Уход за волосами<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Мужчинам<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Подарки<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Аксессуары<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Акции<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Бренды<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+        </div>
+        </div>
+    </div>
+    <script  src="assets/js/basket/basket.js"></script>
+</header>
+
+    <section class="heading page">
+    <div class = "heading__container page__content">
+        <nav>
+            <ol class="breadcrumb heading__breadcrumb">
+                <li class="breadcrumb__list"><a class="breadcrumb__link" href="#">Уход за лицом</a></li>
+                <li class="breadcrumb__list">Увлажнение</li>
+            </ol>
+        </nav>
+        <h2 class="heading__text">Средства для увлажнения </h2>
+    </div>
+</section>
+
+    <div class="page">
+       <div class="page__content">
+            <div class="filters__index">
+                <section class="filters">
+    <button class="button button_white button_small button_filtres">Сбросить все фильтры</button>
+    <div class="filters__brand">
+        <h5 class="filters__title">Бренд</h5>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Biotherm <span class="checkbox__label_gray">89</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Clinique <span class="checkbox__label_gray">87</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Collistar <span class="checkbox__label_gray">67</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Estee lauder <span class="checkbox__label_gray">56</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Lancôme <span class="checkbox__label_gray">43</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <a href="#" class="filters__show-all">Показать все</a>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">От <span class="filters__price price" id="demo"></span> до <span class="filters__price price" id="demo2"></span> ₸</h5>
+        <div class="filters__slider">
+            <div class="range__line" id="range__line">
+            </div>
+            <input type="range" min="100" max="56790" value="100" class="range range_min" id="range_min" oninput="filterFunction()" step="100">
+            <input type="range" min="100" max="56790" value="10000" class="range range_max" id="range_max" oninput="filterFunction()" step="100">
+            <div class="filters__below-prices"><span class="filters__below-prices-left">100 ₸</span><span class="filters__below-prices-right">56 790 ₸</span></div>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">Текстура</h5>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Крем <span class="checkbox__label_gray">89</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Масло <span class="checkbox__label_gray">87</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Вода <span class="checkbox__label_gray">67</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Маска <span class="checkbox__label_gray">56</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">Тип кожи</h5>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox" checked>Все типы <span class="checkbox__label_gray">89</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Нормальная <span class="checkbox__label_gray">87</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Сухая <span class="checkbox__label_gray">67</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Комбинированная <span class="checkbox__label_gray">56</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">Возраст</h5>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox" checked>Для любого возраста <span class="checkbox__label_gray">89</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">с 25 лет <span class="checkbox__label_gray">87</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">с 30 лет <span class="checkbox__label_gray">67</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">с 35 лет <span class="checkbox__label_gray">56</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">с 45 лет <span class="checkbox__label_gray">43</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">SPF <div class="filters__info">?<span class="filters__tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium odio, quod sapiente</span></div> </h5>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox" checked>Низкий spf&lt;15 <span class="checkbox__label_gray">89</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Средний 15&lt;spf&lt;30 <span class="checkbox__label_gray">87</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Высокий 30&lt;spf&lt;50 <span class="checkbox__label_gray">67</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Очень высокий 50&lt;spf <span class="checkbox__label_gray">56</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">Особенности</h5>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Новинка <span class="checkbox__label_gray">89</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Эксклюзив <span class="checkbox__label_gray">87</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Лимитированный выпуск <span class="checkbox__label_gray">67</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Только online <span class="checkbox__label_gray">56</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Бестселлер <span class="checkbox__label_gray">43</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Лучшая цена <span class="checkbox__label_gray">35</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">Страна</h5>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Германия <span class="checkbox__label_gray">89</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Италия <span class="checkbox__label_gray">87</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">США <span class="checkbox__label_gray">67</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <label class="checkbox__label">
+                <input type="checkbox">Франция <span class="checkbox__label_gray">56</span>
+                <span class="checkbox__checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <div class="filters__brand">
+        <h5 class="filters__title">Наличие на складе</h5>
+        <div class="radio">
+            <label class="radio__label">
+                <input type="radio" name="showProducts" value="all" checked>Показывать все товары
+                <span class="radio__radiomark"></span>
+            </label>
+        </div>
+        <div class="radio">
+            <label class="radio__label">
+                <input type="radio" name="showProducts" value="available">Только те, что в наличии
+                <span class="radio__radiomark"></span>
+            </label>
+        </div>
+    </div>
+</section>
+                <div class="sort">
+    <div class="sort__top_left ">
+        <span class="sort__top_text">Показано 475 товаров из 1 473</span>
+    </div>
+    <div class="sort__top_right">
+        <button class="button button_white sort__top_button" onclick="sort(1)"><span class="sort__top_button_text">Подешевле</span></button>
+        <button class="button button_white sort__top_button" onclick="sort(2)"><span class="sort__top_button_text">Подороже</span></button>
+        <button class="button button_white sort__top_button" onclick="sort(3)"><span class="sort__top_button_text">По алфавиту</span></button>
+        <button class="button button_white sort__top_button" onclick="sort(4)"><span class="sort__top_button_text">По рейтингу</span></button>
+    </div>
+    <div class="item">
+        <div class="flag">
+            <div class="item__flag">
+                <span class="item__discount" >30%</span>
+            </div>
+        </div>
+        <div>
+            <a class="item__link" href="#!">
+                <div class="item__link_img_main">
+                    <img class="item__link_img" src="../../../assets/img/sort/sort_img_1.png" width="210" alt="">
+                    <br>
+                    <div class="item__birka">
+                        <img class="item__birka_img" src="../../../assets/img/sales/sales_bg.png" alt="" width="96" height="24">
+                        <span class="item__birka_text">Бестселлер</span>
+                    </div>
+                </div>
+                <div class="item__link_title">
+                    <span class="item__link_title_text">Palmer's</span>
+                </div>
+            </a>
+            <p class="item__description">Увлажняющий бальзам для тела Shea Formula</p>
+        </div>
+        <div class="item__price">
+            <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+            </button>
+            <div class="item__price_original item__price_inline"><s class="item__price_original_line"><span class="item__price_original_text">23 904</span></s></div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <a class="item__link" href="#!">
+                <div class="item__link_img_main">
+                    <img class="item__link_img" src="../../../assets/img/sort/sort_img_2.png" width="250" alt="">
+                    <br>
+                    <div class="item__birka">
+                        <img class="item__birka_img" src="../../../assets/img/sales/sales_bg.png" alt="" width="96" height="24">
+                        <span class="item__birka_text">Бестселлер</span>
+                    </div>
+                </div>
+                <div class="item__link_title">
+                    <span class="item__link_title_text">Clinique</span>
+                </div>
+            </a>
+            <p class="item__description">Увлажняющий крем Superdefense SPF 20 Daily Defense Moisturizer</p>
+        </div>
+        <div class="item__price">
+            <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+            </button>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <a class="item__link" href="#!">
+                <div class="item__link_img_main">
+                    <img class="item__link_img" src="../../../assets/img/sort/sort_img_3.png" width="220" alt="">
+                    <br>
+                </div>
+                <div class="item__link_title">
+                    <span class="item__link_title_text">EVA MOSAIC</span>
+                </div>
+            </a>
+            <p class="item__description">Зеркальное сияние Logo Image Покрытие для закрепления лака</p>
+        </div>
+        <div class="item__price">
+            <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+            </button>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <a class="item__link" href="#!">
+                <div class="item__link_img_main">
+                    <img class="item__link_img" src="../../../assets/img/sort/sort_img_4.png" width="250" alt="">
+                    <br>
+                </div>
+                <div class="item__link_title">
+                    <span class="item__link_title_text">SHISEIDO</span>
+                </div>
+            </a>
+            <p class="item__description">Ночной крем BENEFIANCE NutriPerfect</p>
+        </div>
+        <div class="item__price">
+            <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+            </button>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <a class="item__link" href="#!">
+                <div class="item__link_img_main">
+                    <img class="item__link_img" src="../../../assets/img/sort/sort_img_5.png" width=250"" alt="">
+                    <br>
+                </div>
+                <div class="item__link_title">
+                    <span class="item__link_title_text">LANCOME</span>
+                </div>
+            </a>
+            <p class="item__description">Корректирующий крем VISIONNAIRE DAY</p>
+        </div>
+        <div class="item__price">
+            <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+            </button>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+        <a class="item__link" href="#!">
+            <div class="item__link_img_main">
+                <img class="item__link_img" src="../../../assets/img/sort/sort_img_6.png" width="230" alt="">
+                <br>
+            </div>
+            <div class="item__link_title">
+                <span class="item__link_title_text">LANCOME</span>
+            </div>
+        </a>
+        <p class="item__description">Увлажняющая гелеобразная маска для лица Mask hydra intense</p>
+        </div>
+        <div class="item__price">
+            <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="item">
+        <div>
+            <a class="item__link" href="#!">
+                <div class="item__link_img_main">
+                    <img class="item__link_img" src="../../../assets/img/sort/sort_img_7.png" width="250" alt="">
+                    <br>
+                </div>
+                <div class="item__link_title">
+                    <span class="item__link_title_text">COLLISTAR</span>
+                </div>
+            </a>
+            <p class="item__description">Гидрозащитный крем HYDRO PROTECTIVE CREAM</p>
+        </div>
+        <div class="item__price">
+            <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+            </button>
+            <div class="item__price_original item__price_inline"><s class="item__price_original_line"><span class="item__price_original_text">23 904</span></s></div>
+        </div>
+    </div>
+
+    <div class="item">
+        <div>
+            <a class="item__link" href="#!">
+                <div class="item__link_img_main">
+                    <img class="item__link_img" src="../../../assets/img/sort/sort_img_8.png" width="250" alt="">
+                    <br>
+                </div>
+                <div class="item__link_title">
+                    <span class="item__link_title_text">COLLISTAR</span>
+                </div>
+            </a>
+            <p class="item__description">Крем для лица оттеночный энергия и сияние MAGICA BB COLOR</p>
+        </div>
+        <div class="item__price">
+            <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+            </button>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <a class="item__link" href="#!">
+                <div class="item__link_img_main">
+                    <img class="item__link_img" src="../../../assets/img/sort/sort_img_9.png" width="240" alt="">
+                    <br>
+                </div>
+                <div class="item__link_title">
+                    <span class="item__link_title_text">COLLISTAR</span>
+                </div>
+            </a>
+            <p class="item__description">Увлажняющий, крем для лица REHYDRATING SOOTHING TREATMENT</p>
+        </div>
+        <div class="item__price">
+            <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+            </button>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <a class="item__link" href="#!">
+                <div class="item__link_img_main">
+                    <img class="item__link_img" src="../../../assets/img/sort/sort_img_10.png" width="250" alt="">
+                    <br>
+                </div>
+                <div class="item__link_title">
+                    <span class="item__link_title_text">COLLISTAR</span>
+                </div>
+            </a>
+            <p class="item__description">Эмульсия для проблемных зон S.O.S. BLEMISHES</p>
+        </div>
+        <div class="item__price">
+            <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="item">
+        <div>
+            <a class="item__link item__link_disabled" href="#!">
+                <div class="item__link_img_main">
+                    <img class="item__link_img sort_off" src="../../../assets/img/sort/sort_img_11.png" width="220" alt="">
+                    <br>
+                </div>
+                <div class="item__link_title">
+                    <span class="item__title sort_off sort_off_price">Estee Lauder</span>
+                </div>
+            </a>
+            <div class="sort__item_img_birka "><div class="birka"><img class="sort__item_off_img" src="../../../assets/img/sort/sort_item_birka2.png" alt=""><span class="sort__item_img_span_text">Нет в наличии</span></div></div>
+            <p class="item__description sort_off ">Обезжиренный лифтинговый крем, повышающий упругость кожи лица и шеи СЗФ 15 Resilience Lift</p>
+        </div>
+        <div class="item__price">
+            <button class="button button_inactive">18 760 ₸</button>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <a class="item__link" href="#!">
+                <div class="item__link_img_main">
+                    <img class="item__link_img" src="../../../assets/img/sort/sort_img_12.png" width="230" alt="">
+                    <br>
+                </div>
+                <div class="item__link_title">
+                    <span class="item__link_title_text">SCHAEBENS</span>
+                </div>
+            </a>
+            <p class="item__description">Маска с экстрактом водорослей</p>
+        </div>
+        <div class="item__price">
+            <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+            </button>
+        </div>
+    </div>
+
+</div>
+
+            </div>
+           <div class="pagination">
+    <div class="pagination__page pagination__page_active">1</div>
+    <div class="pagination__page">2</div>
+    <div class="pagination__page">3</div>
+    <div class="pagination__page">4</div>
+    <div class="pagination__page">5</div>
+    <div class="pagination__dots">. . .</div>
+    <div class="pagination__page">12</div>
+</div>
+       </div>
+    </div>
+    <div class="page">
+<section class="blog page-content">
+	<span class="h2 blog__title">Полезное из блога</span>
+	<div class="blog__articles">
+		<a href="#!" class="blog__article">
+			<img src="../assets/img/blog/blog_1.png" alt="" class="blog__img">
+			<span class="blog__text blog__text_big">
+				<span>Расставляем точки над i: Кисти для макияжа</span>
+			</span>
+		</a>
+		<div class="blog__list">
+			<div class="blog_list blog__list_top">
+			<a href="#!" class="blog__article blog__article_min">
+				<img src="../assets/img/blog/blog_2.png" alt="" class="blog__img blog__img_min">
+				<div class="blog__text blog__text_min">
+				<span>Как для себя: Плюс-сайз модели, запустившие марки одежды</span>
+			</div>
+			</a>
+			<a href="#!" class="blog__article blog__article_min">
+				<img src="../assets/img/blog/blog_3.png" alt="" class="blog__img blog__img_min">
+				<div class="blog__text blog__text_min">
+				<span>Зимний уход: Новинки и проверенные средства</span>
+				</div>
+			</a>
+			</div>
+			<a href="#!" class="blog__article blog__article_last">
+				<img src="../assets/img/blog/blog_4.png" alt="" class="blog__img blog__img_last">
+				<div class="blog__text blog__text_last">
+					<span> Как правильно произносить названия бьюти-брендов? </span>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+</div>
+    <div class="page">
+    <section class="brands page-content">
+        <div class="divider">
+            <span class="divider__title">Популярные бренды</span>
+        </div>
+        <div class="brands__content">
+            <div class="brands__img-container">
+                <img class="brands__jimmy-img" src="../../../assets/img/brands/brands_jimmy-choo.png" alt="jimmy-choo">
+            </div>
+            <div class="brands__img-container">
+                <img class="brands__lancome-img" src="../../../assets/img/brands/brands_lancome.png" alt="lancome">
+            </div>
+            <div class="brands__img-container">
+                <img class="brands__mont-img" src="../../../assets/img/brands/brands_mont-blanc.png" alt="mont-blanc">
+            </div>
+            <div class="brands__img-container">
+                <img class="brands__estee-img" src="../../../assets/img/brands/brands_estee-lauder.png" alt="estee-lauder">
+            </div>
+            <div class="brands__img-container">
+                <img class="brands__dkny-img" src="../../../assets/img/brands/brands_dkny.png" alt="dkny">
+            </div>
+            <div class="brands__img-container">
+                <img class="brands__kenzo-img" src="../../../assets/img/brands/brands_kenzo.png" alt="kenzo">
+            </div>
+        </div>
+    </section>
+</div>
+
+    <div class="page">
+    <div class="page__content">
+        <div class="subscribe__main">
+            <div class="subscribe_input_div">
+                <h3 class="subscribe_title">Подпишитесь и будьте всегда в курсе скидок!</h3>
+                <div class="subscribe__search">
+                    <div class="input subscribe__input">
+                        <input type="text" class="input__main input__main_big" placeholder="Введите свою почту">
+                    </div>
+                    <button class="button">Подписаться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <footer class="footer page">
+    <div class="grid">
+        <div class="col3">
+            <ul class="footer__menu">
+                <li class="footer__title">Нужна помощь?</li>
+                <li class="footer__title">+7 727 256–32–32 </li>
+                <li class="footer__title"><span class="footer__mail">help@rocketshop.kz</span></li>
+                <button type="button" class="button button_white footer__call-btn">Заказать звонок</button>
+            </ul>
+        </div>
+        <div class="col2">
+            <ul class="footer__menu">
+                <li class="footer__title">О компании</li>
+                <li class="footer__list"><a href="#" class="h5 footer__link ">История компании</a></li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">Гарантия качества</a></li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">Адреса магазинов</a></li>
+            </ul>
+
+        </div>
+        <div class="col2">
+            <ul class="footer__menu">
+                <li class="footer__title">Как купить</li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">Оплата и доставка</a></li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">О возврате товара</a></li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">Вопросы и ответы</a></li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">Бизнесу</a></li>
+            </ul>
+        </div>
+        <div class="col2">
+            <ul class="footer__menu">
+                <li class="footer__title">Полезно</li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">Блог</a></li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">Акции</a></li>
+            </ul>
+        </div>
+        <div class="col3">
+            <ul class="footer__menu">
+                <li class="footer__title">Узнавайте о скидках <br>из соцсетей</li>
+                <li class="footer__-list">
+                    <a href="#" class="footer__social"><i class="rocket-fb footer__icon"></i></a>
+                    <a href="#" class="footer__social"><i class="rocket-insta footer__icon"></i></a>
+                    <a href="#" class="footer__social"><i class="rocket-twitter footer__icon"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col12 footer__line"></div>
+        <div class="col9 footer__bottom">
+            <span>© 2017 Монами</span>
+            <a href="#" class="footer__link footer__link_inline">Правила сайта</a>
+            <a href="#" class="footer__link footer__link_inline">Политика конфиденциальности</a>
+        </div>
+        <div class="col3 footer__logo">
+            <img src="../assets/img/footer/footer_logo.png" width="120px" alt=""/>
+            <span class="footer__logo_year">2017</span>
+        </div>
+    </div>
+</footer>
+    <script src="assets/js/filters/filters.js"></script>
+    <script src="assets/js/sort/sort.js"></script>
+    <script src="assets/js/price/price.js"></script>
+</body>
+</html>

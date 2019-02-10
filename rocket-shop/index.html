@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header">
+    <div class="header__top page">
+        <div class="page__content">
+            <div class="header__main-nav">
+                <ul class="list-inline">
+                    <li class="list-inline__item">
+                        <select class="list-inline__select">
+                            <option value="" class="list-inline__item">Алматы</option>
+                            <option value="" class="list-inline__item">Астана</option>
+                            <option value="" class="list-inline__item">Тараз</option>
+                            <option value="" class="list-inline__item">Чимкент</option>
+                        </select>
+                    </li>
+                    <li class="list-inline__item"><a class="list-inline__link" href="#">Оплата и отправка</a></li>
+                    <li class="list-inline__item"><a class="list-inline__link" href="#">О возврате товара</a></li>
+                    <li class="list-inline__item">По любым вопросам: +7 727 237-98-53 и +7 707 237-98-54</li>
+                </ul>
+                <button class="button button_white button_small">Заказать звонок</button>
+                <a class="header__language" href="#">Қазақша</a>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="page-content">
+        <div class="header__main">
+            <div class="input header__main-input">
+                <input type="text" class="input__main" placeholder="Поиск">
+            </div>
+            <a href="/" class="header__logo">
+                <img class="header__logo_img" src="../../../assets/img/header/header-logo.png" alt="rocket-logo" width="280">
+            </a>
+            <ul class="header__list">
+                <li><a href="#" class="header__login">Войти</a></li>
+                <li>
+                    <button class="button button_white button_left-ico button_basket" onclick="basketDisplay()" id="basket_icon"><i class="rocket-shop-bag button__ico_medium button__ico_left-ico"></i>Корзина <div class="button__circle-text">3</div></button>
+                    <div class="basket hide" id="basket">
+    <div class="h3">3 товара в корзине</div>
+        <div class="product-list basket__list">
+            <div class="product-list__item">
+                <div  class="product-list__img">
+                    <img src="../../../assets/img/cart/cart_shea-formula.png" alt="shea-formula" width="70">
+                </div>
+                <div>
+                    <a class="item__link" href="">
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">PALMER'S</span>
+                        </div>
+                    </a>
+                    <p class="product-list__description basket__info">Увлажняющий бальзам для тела Shea Formula</p>
+                </div>
+            </div>
+            <div class="product-list__price">
+                <div class="product-amount product-amount__cart basket__price">1 шт.</div>
+                <div class="product-list__price-value"><span class="price basket__price">18760</span><br>₸</div>
+                <a href="#" class="product-list__close basket__close"><i class="rocket-close-2"></i></a>
+            </div>
+        </div>
+        <div class="product-list basket__list">
+            <div class="product-list__item">
+                <div  class="product-list__img">
+                    <img src="../../../assets/img/cart/cart_mont-blanc.png" alt="mont-blanc" width="70">
+                </div>
+                <div>
+                    <a class="item__link" href="">
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">MONTBLANC</span>
+                        </div>
+                    </a>
+                    <p class="product-list__description basket__info">Туалетная вода LEGEND, EDT</p>
+                </div>
+            </div>
+            <div class="product-list__price">
+                <div class="product-amount product-amount__cart basket__price">1 шт.</div>
+                <div class="product-list__price-value"><span class="price basket__price">18760</span><br>₸</div>
+                <a href="#" class="product-list__close basket__close"><i class="rocket-close-2"></i></a>
+            </div>
+        </div>
+        <div class="product-list basket__list">
+            <div class="product-list__item">
+                <div  class="product-list__img">
+                    <img src="../../../assets/img/cart/cart_clinique.png" alt="clinique" width="70">
+                </div>
+                <div>
+                    <a class="item__link" href="">
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">CLINIQUE</span>
+                        </div>
+                    </a>
+                    <p class="product-list__description basket__info">Помада для губ Pop Lip Colour + Primer</p>
+                </div>
+            </div>
+            <div class="product-list__price">
+                <div class="product-amount product-amount__cart basket__price">1 шт.</div>
+                <div class="product-list__price-value"><span class="price basket__price">5850</span><br>₸</div>
+                <a href="#" class="product-list__close  basket__close"><i class="rocket-close-2"></i></a>
+            </div>
+        </div>
+    <br>
+    <div><button class="button button_large">Оформить заказ</button><p class="basket__total">Итого — <span class="price basket__price basket__price_pink">44760</span><span class="basket__price basket__price_pink">₸</span></p></div>
+</div>
+                </li>
+            </ul>
+        </div>
+        <div class="dropdown header__bottom">
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Парфюмерия<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Макияж<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Уход за кожей<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Уход за волосами<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Мужчинам<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Подарки<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Аксессуары<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Акции<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+            <button class="header__dropdown-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Бренды<i class="fa fa-angle-down arrow_icon"></i>
+            </button>
+        </div>
+        </div>
+    </div>
+    <script  src="assets/js/basket/basket.js"></script>
+</header>
+
+    <div class="page">
+<section class="slider page-content">
+	<div class="slider__big animated">
+		<span class="slider__text slider__text_big">Второй парфюм в корзине с 50% скидкой</span>
+		<p class="slider__text slider__text_descr">Купите парфюм себе в подарок на Новый 2017 год и получите 50% на парфюм для него или подруги.</p>
+		<button class="button button_large slider__button">Вперед за покупками!</button>
+	</div>
+	<div class="slider__big animated">
+		<span class="slider__text slider__text_big">Второй парфюм в корзине с 50% скидкой 2</span>
+		<p class="slider__text slider__text_descr">Купите парфюм себе в подарок на Новый 2017 год и получите 50% на парфюм для него или подруги.</p>
+		<button class="button button_large slider__button">Вперед за покупками!</button>
+	</div>
+	<div class="slider__big animated">
+		<span class="slider__text slider__text_big">Второй парфюм в корзине с 50% скидкой 3</span>
+		<p class="slider__text slider__text_descr">Купите парфюм себе в подарок на Новый 2017 год и получите 50% на парфюм для него или подруги.</p>
+		<button class="button button_large slider__button">Вперед за покупками!</button>
+	</div>
+	<div class="slider__big animated">
+		<span class="slider__text slider__text_big">Второй парфюм в корзине с 50% скидкой 4</span>
+		<p class="slider__text slider__text_descr">Купите парфюм себе в подарок на Новый 2017 год и получите 50% на парфюм для него или подруги.</p>
+		<button class="button button_large slider__button">Вперед за покупками!</button>
+	</div>
+	<div class="slider__list">
+		<div class="slider__min" onclick="currentSlide(1)">
+			<span class="slider__text slider__text_min">Второй парфюм в корзине с 50% скидкой</span>
+			<img src="/assets/img/slider/slider_min_1.png" class="slider__img"></img>
+		</div>
+		<div class="slider__min" onclick="currentSlide(2)">
+			<span class="slider__text slider__text_min">Не пропустите новогоднюю распродажу 2016</span>
+			<img src="/assets/img/slider/slider_min_2.png" class="slider__img"></img>
+		</div>
+		<div class="slider__min" onclick="currentSlide(3)">
+			<span class="slider__text slider__text_min">Скидки на мужскую косметику до 70%</span>
+			<img src="/assets/img/slider/slider_min_3.png" class="slider__img"></img>
+		</div>
+		<div class="slider__min" onclick="currentSlide(4)">
+			<span class="slider__text slider__text_min">При покупке на сумму 15 000 тенге средства для ухода MAC в подарок!</span>
+			<img src="/assets/img/slider/slider_min_4.png" class="slider__img"></img>
+		</div>
+	</div>
+</section>
+</div>
+<script  src="assets/js/slider/slider.js"></script>
+     <div class="page">
+    <div class="page__content">
+        <div class="divider">
+            <span class="divider__title">% Товары со скидкой </span>
+        </div>
+        <div class="items">
+            <div class="item">
+                <div class="flag">
+                    <div class="item__flag">
+                        <span class="item__discount" >30%</span>
+                    </div>
+                </div>
+                <div>
+                    <a class="item__link" href="#!">
+                        <div class="item__link_img_main">
+                            <img class="item__link_img" src="../../../assets/img/sales/sales_3edeab0bef86253ca35e56f7d18030ccf8350940.png" width="240" alt="">
+                            <br>
+                        </div>
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">YVES SAINT LAURENT</span>
+                        </div>
+                    </a>
+                    <p class="item__description">Тональный крем Touche Eclat Le Teint</p>
+                </div>
+                <div class="item__price">
+                    <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                        <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+                    </button>
+                    <div class="item__price_original item__price_inline"><s  class="item__price_original_line"><span class="item__price_original_text">23 904</span></s></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="flag">
+                    <div class="item__flag">
+                        <span class="item__discount" >50%</span>
+                    </div>
+                </div>
+                <div>
+                    <a class="item__link" href="#!">
+                        <div class="item__link_img_main">
+                            <img class="item__link_img" src="../../../assets/img/sales/sales_7ba1ae07e703af3b31f0fa31a46ec790b9ab1286.png" width="250" alt="">
+                            <br>
+                            <div class="item__birka ">
+                                <img class="item__birka_img" src="../../../assets/img/sales/sales_bg.png" alt="" width="96" height="24">
+                                <span class="item__birka_text">Бестселлер</span>
+                            </div>
+                        </div>
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">Clinique</span>
+                        </div>
+                    </a>
+                    <p class="item__description">Помада для губ Pop Lip Colour + Primer</p>
+                </div>
+                <div class="item__price">
+                    <button class="button button_gray button_right-ico">12 360 ₸<div class="button__line"></div>
+                        <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+                    </button>
+                    <div class="item__price_original item__price_inline"><s class="item__price_original_line"><span class="item__price_original_text">23 904</span></s></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="flag">
+                    <div class="item__flag">
+                        <span class="item__discount" >30%</span>
+                    </div>
+                </div>
+                <div>
+                    <a class="item__link" href="#!">
+                        <div class="item__link_img_main">
+                            <img class="item__link_img" src="../../../assets/img/sales/sales_3945dc0a05b1d4c2058811c4c64962607e3ea2e1.png" width="240" alt="">
+                            <br>
+                        </div>
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">MONTBLANC</span>
+                        </div>
+                    </a>
+                    <p class="item__description">Туалетная вода LEGEND, EDT</p>
+                </div>
+                <div class="item__price">
+                    <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                        <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+                    </button>
+                    <div class="item__price_original item__price_inline"><s class="item__price_original_line"><span class="item__price_original_text">23 904</span></s></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="flag">
+                    <div class="item__flag">
+                        <span class="item__discount" >30%</span>
+                    </div>
+                </div>
+                <div>
+                    <a class="item__link" href="#!">
+                        <div class="item__link_img_main">
+                            <img class="item__link_img" src="../../../assets/img/sales/sales_825104d4d4e6db77b7d288105deda1af91e155d5.png" width="250" alt="">
+                            <br>
+                        </div>
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">Marc Jacobs</span>
+                        </div>
+                    </a>
+                    <p class="item__description">Парфюм унисекс Pear EDT</p>
+                </div>
+                <div class="item__price">
+                    <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                        <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+                    </button>
+                    <div class="item__price_original item__price_inline"><s class="item__price_original_line"><span class="item__price_original_text">23 904</span></s></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="flag">
+                    <div class="item__flag">
+                        <span class="item__discount" >30%</span>
+                    </div>
+                </div>
+                <div>
+                    <a class="item__link" href="#!">
+                        <div class="item__link_img_main">
+                            <img class="item__link_img" src="../../../assets/img/sales/sales_f0d6d37495d080665ed270e73001f3fcf35b0a3e.png" width="240" alt="">
+                            <br>
+                        </div>
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">COLLISTAR</span>
+                        </div>
+                    </a>
+                    <p class="item__description">Гидрозащитный крем HYDRO PROTECTIVE CREAM</p>
+                </div>
+                <div class="item__price">
+                    <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                        <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+                    </button>
+                    <div class="item__price_original item__price_inline"><s class="item__price_original_line"><span class="item__price_original_text">23 904</span></s></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="flag">
+                    <div class="item__flag">
+                        <span class="item__discount" >30%</span>
+                    </div>
+                </div>
+                <div>
+                    <a class="item__link" href="#!">
+                        <div class="item__link_img_main">
+                            <img class="item__link_img" src="../../../assets/img/sales/sales_15a1cb3b2a4e5707ebd7b74bd23124e6ee071d24.png" width="250" alt="">
+                            <br>
+                        </div>
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">COLLISTAR</span>
+                        </div>
+                    </a>
+                    <p class="item__description">Крем для лица оттеночный энергия и сияние MAGICA BB COLOR</p>
+                </div>
+                <div class="item__price">
+                    <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                        <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+                    </button>
+                    <div class="item__price_original item__price_inline"><s class="item__price_original_line"><span class="item__price_original_text">23 904</span></s></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="flag">
+                    <div class="item__flag">
+                        <span class="item__discount" >30%</span>
+                    </div>
+                </div>
+                <div>
+                    <a class="item__link" href="#!">
+                        <div class="item__link_img_main">
+                            <img class="item__link_img" src="../../../assets/img/sales/sales_c630de96a0b7a2516e6cb2721f17fac1975ba9e0.png" width="240" alt="">
+                            <br>
+                        </div>
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">COLLISTAR</span>
+                        </div>
+                    </a>
+                    <p class="item__description">Увлажняющий, крем для лица REHYDRATING SOOTHING TREATMENT</p>
+                </div>
+                <div class="item__price">
+                    <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                        <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+                    </button>
+                    <div class="item__price_original item__price_inline"><s class="item__price_original_line"><span class="item__price_original_text">23 904</span></s></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__last_item_img_main">
+                    <div class="item__img_last_content"><a href="#!" class="item__img_last_text">Посмотреть еще 38 товаров со скидкой</a></div>
+                </div>
+            </div>
+       </div>
+    </div>
+ </div>
+    <div class="page">
+	<section class="selection page-content">
+		<a href="#!" class="selection__item selection__item_bg-1">
+			<div class="selection__cover">
+			<div class="selection__container">
+			<span class="selection__title">Парфюм для него на <br>Новый год</span>
+			<ul class="selection__brands">
+				<li>KENZO</li>
+				<li>Givenchy</li>
+				<li> Yves Saint Laurent</li>
+			</ul>
+			</div></div>
+		</a>
+		<a href="#!" class="selection__item selection__item_bg-2" >
+			<div class="selection__cover">
+			<div class="selection__container">
+			<span class="selection__title">Подборка самых ярких теней для глаз</span>
+			<ul class="selection__brands">
+				<li>KENZO</li>
+				<li>Givenchy</li>
+				<li> Yves Saint Laurent</li>
+				<li>Givenchy</li>
+				<li> Yves Saint Laurent</li>
+			</ul>
+			</div></div>
+		</a>
+	</section>
+</div>
+    <div class="page">
+    <div class="page__content">
+        <div  class="divider">
+            <span class="divider__title"><img class="divider__icon-new" src="../../../assets/img/divider/divider_new_image.png" alt=""> Новинки</span>
+        </div>
+        <div class="new__items">
+            <div class="new__item_first">
+                <div>
+                    <a class="item__link" href="">
+                        <div class="item__link_img_main_big "><img class="item__link_img item__link_big_img" src="../../../assets/img/new/new_0b3352cc35d37e7b5244192313effb45312b2ee2.png" width="490" alt=""></div>
+                        <h5 class="item_title_big">YVES SAINT LAURENT</h5>
+                    </a>
+                    <h3 class="item_sub-title">Женский парфюм In Love Again, EDT</h3>
+                    <p class="item__text item__big_text new__item_desc new__item_desc-big">Представляем новую Clinique Pop Lip Colour + Primer — насыщенный оттенок помады + разглаживающий праймер в одной формуле.</p>
+                </div>
+                <div class="item__price">
+                    <button class="button button_gray button_right-ico button_big">18 760 ₸<div class="button__line button__line_long"></div>
+                        <i class="rocket-shop-bag_plus button__ico_right-ico " ></i>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <a class="item__link" href="">
+                        <div class="item__link_img_main">
+                            <img class="item__link_img" src="../../../assets/img/new/new_64da4b709c60416d64b53015cb2c969bc54f7cff.png" width="250" alt="">
+                            <br>
+                        </div>
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">ESTEE LAUDER</span>
+                        </div>
+                    </a>
+                    <p class="item__description new__item_desc">Advanced Night Micro Cleansing Balm Очищающий бальзам</p>
+                </div>
+                <div class="item__price">
+                    <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                        <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <a class="item__link" href="">
+                        <div class="item__link_img_main">
+                            <img class="item__link_img" src="../../../assets/img/new/new_60cdd073d22b9e37b7bef614b5fbf10cfbdfb1a4.png" width="220" alt="">
+                            <br>
+                        </div>
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">EVA MOSAIC</span>
+                        </div>
+                    </a>
+                    <p class="item__description new__item_desc">Зеркальное сияние Logo Image Покрытие для закрепления лака</p>
+                </div>
+                <div class="item__price">
+                    <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                        <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <a class="item__link" href="">
+                        <div class="item__link_img_main">
+                            <img class="item__link_img" src="../../../assets/img/new/new_950fb485fb6dc8db54ab908d95356a9e592c49ff.png" width="200" alt="">
+                            <br>
+                        </div>
+                        <div class="item__link_title">
+                            <span class="item__link_title_text">Palmer's</span>
+                        </div>
+                    </a>
+                    <p class="item__description new__item_desc">Увлажняющий бальзам для тела Shea Formula</p>
+                </div>
+                <div class="item__price">
+                    <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                        <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__last_item_img_main">
+                    <div class="item__img_last_content"><a href="#!" class="item__img_last_text">Посмотреть еще 25 товаров новинок</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="page">
+<section class="blog page-content">
+	<span class="h2 blog__title">Полезное из блога</span>
+	<div class="blog__articles">
+		<a href="#!" class="blog__article">
+			<img src="../assets/img/blog/blog_1.png" alt="" class="blog__img">
+			<span class="blog__text blog__text_big">
+				<span>Расставляем точки над i: Кисти для макияжа</span>
+			</span>
+		</a>
+		<div class="blog__list">
+			<div class="blog_list blog__list_top">
+			<a href="#!" class="blog__article blog__article_min">
+				<img src="../assets/img/blog/blog_2.png" alt="" class="blog__img blog__img_min">
+				<div class="blog__text blog__text_min">
+				<span>Как для себя: Плюс-сайз модели, запустившие марки одежды</span>
+			</div>
+			</a>
+			<a href="#!" class="blog__article blog__article_min">
+				<img src="../assets/img/blog/blog_3.png" alt="" class="blog__img blog__img_min">
+				<div class="blog__text blog__text_min">
+				<span>Зимний уход: Новинки и проверенные средства</span>
+				</div>
+			</a>
+			</div>
+			<a href="#!" class="blog__article blog__article_last">
+				<img src="../assets/img/blog/blog_4.png" alt="" class="blog__img blog__img_last">
+				<div class="blog__text blog__text_last">
+					<span> Как правильно произносить названия бьюти-брендов? </span>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+</div>
+    <div class="page">
+    <section class="popular page-content">
+        <div class="divider">
+            <span class="divider__title"><img class="divider__icon-heart" src="../../../assets/img/popular/popular_heart_icon.png" alt="heart icon">Популярные товары</span>
+        </div>
+        <div class="popular-content">
+            <div class="item">
+                <a class="item__link" href="">
+                    <div class="item__link_img_main">
+                        <img class="item__link_img" src="../../../assets/img/popular/popular_ysl.png" width="240" alt="ysl">
+                        <br>
+                    </div>
+                    <div class="item__link_title">
+                        <span class="item__link_title_text">YVES SAINT LAURENT</span>
+                    </div>
+                </a>
+                <p class="item__description">Тональный крем Touche Eclat Le Teint</p>
+                <div class="button__item button__item_position">
+                    <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                        <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <a class="item__link" href="">
+                    <div class="item__link_img_main">
+                        <img class="item__link_img" src="../../../assets/img/popular/popular_marc-jacobs.png " width="250" alt="marc-jacobs">
+                    </div>
+                    <div class="item__link_title">
+                        <span class="item__link_title_text">MARC JACOBS</span>
+                    </div>
+                </a>
+                <p class="item__description"> Парфюм унисекс Pear EDT</p>
+                <div class="button__item button__item_position">
+                    <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                        <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <a class="item__link" href="">
+                    <div class="item__link_img_main">
+                        <img class="item__link_img" src="../../../assets/img/popular/popular_mont-blanc.png" width="240" alt="mont-blanc">
+                    </div>
+                    <div class="item__link_title">
+                        <span class="item__link_title_text">MONT BLANC</span>
+                    </div>
+                </a>
+                <p class="item__description">Туалетная вода LEGENG,EDT</p>
+                <div class="button__item button__item_position">
+                    <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                        <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+                    </button>
+                </div>
+            </div>
+            <div class="item">
+                <a class="item__link" href="">
+                    <div class="item__link_img_main">
+                        <img class="item__link_img" src="../../../assets/img/popular/popular_lancome.png" width="230" alt="lancome">
+                    </div>
+                    <div class="item__link_title">
+                        <span class="item__link_title_text">LANCOME</span>
+                    </div>
+                </a>
+                <p class="item__description"> Energie De Vie Ночная маска</p>
+                <div class="button__item button__item_position">
+                    <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+                        <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    <div class="page">
+    <section class="brands page-content">
+        <div class="divider">
+            <span class="divider__title">Популярные бренды</span>
+        </div>
+        <div class="brands__content">
+            <div class="brands__img-container">
+                <img class="brands__jimmy-img" src="../../../assets/img/brands/brands_jimmy-choo.png" alt="jimmy-choo">
+            </div>
+            <div class="brands__img-container">
+                <img class="brands__lancome-img" src="../../../assets/img/brands/brands_lancome.png" alt="lancome">
+            </div>
+            <div class="brands__img-container">
+                <img class="brands__mont-img" src="../../../assets/img/brands/brands_mont-blanc.png" alt="mont-blanc">
+            </div>
+            <div class="brands__img-container">
+                <img class="brands__estee-img" src="../../../assets/img/brands/brands_estee-lauder.png" alt="estee-lauder">
+            </div>
+            <div class="brands__img-container">
+                <img class="brands__dkny-img" src="../../../assets/img/brands/brands_dkny.png" alt="dkny">
+            </div>
+            <div class="brands__img-container">
+                <img class="brands__kenzo-img" src="../../../assets/img/brands/brands_kenzo.png" alt="kenzo">
+            </div>
+        </div>
+    </section>
+</div>
+
+    <div class="page">
+    <div class="page__content">
+        <div class="subscribe__main">
+            <div class="subscribe_input_div">
+                <h3 class="subscribe_title">Подпишитесь и будьте всегда в курсе скидок!</h3>
+                <div class="subscribe__search">
+                    <div class="input subscribe__input">
+                        <input type="text" class="input__main input__main_big" placeholder="Введите свою почту">
+                    </div>
+                    <button class="button">Подписаться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <footer class="footer page">
+    <div class="grid">
+        <div class="col3">
+            <ul class="footer__menu">
+                <li class="footer__title">Нужна помощь?</li>
+                <li class="footer__title">+7 727 256–32–32 </li>
+                <li class="footer__title"><span class="footer__mail">help@rocketshop.kz</span></li>
+                <button type="button" class="button button_white footer__call-btn">Заказать звонок</button>
+            </ul>
+        </div>
+        <div class="col2">
+            <ul class="footer__menu">
+                <li class="footer__title">О компании</li>
+                <li class="footer__list"><a href="#" class="h5 footer__link ">История компании</a></li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">Гарантия качества</a></li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">Адреса магазинов</a></li>
+            </ul>
+
+        </div>
+        <div class="col2">
+            <ul class="footer__menu">
+                <li class="footer__title">Как купить</li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">Оплата и доставка</a></li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">О возврате товара</a></li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">Вопросы и ответы</a></li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">Бизнесу</a></li>
+            </ul>
+        </div>
+        <div class="col2">
+            <ul class="footer__menu">
+                <li class="footer__title">Полезно</li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">Блог</a></li>
+                <li class="footer__list"><a href="#" class="h5 footer__link">Акции</a></li>
+            </ul>
+        </div>
+        <div class="col3">
+            <ul class="footer__menu">
+                <li class="footer__title">Узнавайте о скидках <br>из соцсетей</li>
+                <li class="footer__-list">
+                    <a href="#" class="footer__social"><i class="rocket-fb footer__icon"></i></a>
+                    <a href="#" class="footer__social"><i class="rocket-insta footer__icon"></i></a>
+                    <a href="#" class="footer__social"><i class="rocket-twitter footer__icon"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col12 footer__line"></div>
+        <div class="col9 footer__bottom">
+            <span>© 2017 Монами</span>
+            <a href="#" class="footer__link footer__link_inline">Правила сайта</a>
+            <a href="#" class="footer__link footer__link_inline">Политика конфиденциальности</a>
+        </div>
+        <div class="col3 footer__logo">
+            <img src="../assets/img/footer/footer_logo.png" width="120px" alt=""/>
+            <span class="footer__logo_year">2017</span>
+        </div>
+    </div>
+</footer>
+    <script src="assets/js/price/price.js"></script>
+</body>
+</html>

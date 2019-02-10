@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+    <div class="page">
+        <div class="page-content">
+            <section>
+    <h1>Input</h1>
+    <div class="input">
+        <label for="input" class="input__label">Поиск</label>
+        <span class="input__help input__label input__label_gray">Подсказка</span>
+        <input id="input" type="text" class="input__main input__main_text" placeholder="Поиск">
+    </div>
+</section>
+            <section>
+    <h1>Checkbox</h1>
+    <div class="checkbox">
+        <label class="checkbox__label">
+            <input type="checkbox">Clinique <span class="checkbox__label_gray">87</span>
+            <span class="checkbox__checkmark"></span>
+        </label>
+    </div>
+    <div class="checkbox">
+        <label class="checkbox__label">
+            <input type="checkbox" checked>Biotherm <span class="checkbox__label_gray">89</span>
+            <span class="checkbox__checkmark"></span>
+        </label>
+    </div>
+</section>
+
+
+            <section>
+    <h1>Radio button</h1>
+    <div class="radio">
+        <label class="radio__label">
+            <input type="radio" name="showProducts" value="all" checked>Показывать все товары
+            <span class="radio__radiomark"></span>
+        </label>
+    </div>
+    <div class="radio">
+        <label class="radio__label">
+            <input type="radio" name="showProducts" value="available">Только те, что в наличии
+            <span class="radio__radiomark"></span>
+        </label>
+    </div>
+</section>
+            <h1>Price class="price"</h1>
+<div class="price">121254445 тг</div>
+<h3 class="price">12125.44тг</h3>
+            <section>
+    <h2>Breadcrumbs</h2>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb__list"><a class="breadcrumb__link" href="#">Макияж</a></li>
+            <li class="breadcrumb__list"><a class="breadcrumb__link" href="#">Декоративная косметика</a></li>
+            <li class="breadcrumb__list">Помады</li>
+        </ol>
+    </nav>
+</section>
+            <section>
+    <h1>Divider</h1>
+    <div class="divider">
+        <span class="divider__title">% Товары со скидкой </span>
+    </div>
+    <div class="divider">
+        <span class="divider__title"><img class="divider__icon-heart" src="../../../assets/img/divider/divider_heart_icon.png" alt="heart icon">Популярные товары</span>
+    </div>
+    <div  class="divider">
+        <span class="divider__title"><img class="divider__icon-new" src="../../../assets/img/divider/divider_new_image.png" alt=""> Новинки</span>
+    </div>
+    <div class="divider divider_left">
+        <span class="divider__title divider__title_left">Вам могут понравится</span>
+    </div>
+    <div class="divider divider_left">
+        <span class="divider__title divider__title_left">Недавно просмотренные</span>
+    </div>
+    <div class="divider divider_left">
+        <span class="divider__title divider__title_left">С этим товаром покупают</span>
+    </div>
+</section>
+            <section class="amount-guide">
+    <h2>Product-amount block</h2>
+    <div class="product-amount product-amount__cart" style="margin-bottom: 30px">
+        <div class="product-amount__decrease product-amount__decrease_cart-size"  style="visibility: hidden">–</div>
+        <input  type="text" class="product-amount__value product-amount__value_cart-size" value="1 шт." data-price="18760" data-count="1" disabled style="padding:0">
+        <div class="product-amount__increase product-amount__increase_cart-size">+</div>
+    </div>
+    <div class="product-amount product-amount__card">
+        <div class="product-amount__decrease product-amount__decrease_card-size" onclick="minus()">–</div>
+        <div class="product-amount__value product-amount__value_card-size"><span class="count__value">2 </span> шт.</div>
+        <div class="product-amount__increase product-amount__increase_card-size" onclick="add()">+</div>
+    </div>
+</section>
+            <section class="product-list-guide">
+    <h2>Product-list block</h2>
+    <div class="row product-list no-gutters">
+        <div class="col-lg-6 product-list__item">
+            <div  class="product-list__img">
+                <img src="../../../assets/img/product-list/pl_clinique.png" alt="clinique" style="width: 101px">
+            </div>
+
+            <div>
+                <a href="#!"><h3 class="product-list__title">CLINIQUE</h3></a>
+                <p class="product-list__description">Помада для губ Pop Lip Colour + Primer</p>
+                <span class="product-list__color" style="display: block; margin-top: 8px;"> Цвет — Passion Pop</span>
+                <span class="product-list__code">Артикул — 020714548766</span>
+            </div>
+        </div>
+
+        <div class="col-lg-6 product-list__price">
+            <div class="product-amount product-amount__cart">
+                <div class="product-amount__decrease product-amount__decrease_cart-size"  style="visibility: hidden">–</div>
+                <input  type="text" class="product-amount__value product-amount__value_cart-size" value="1 шт." data-price="5850" data-count="1" disabled style="padding:0">
+                <div class="product-amount__increase product-amount__increase_cart-size">+</div>
+            </div>
+
+            <span class="product-list__price-value">5850 ₸</span>
+            <a href="#" class="product-list__close"><i class="rocket-close-2"></i></a>
+        </div>
+    </div>
+    <div class="row product-list no-gutters row_basket">
+        <div class="col-lg-7 product-list__item">
+            <div  class="product-list__img">
+                <img  src="../../assets/img/product-list/pl_shea-formula.png" class="img_basket" alt="shea-formula">
+            </div>
+
+            <div>
+                <a href="#!"><h3 class="product-list__title">PALMER'S</h3></a>
+                <p class="product-list__description text_basket">Увлажняющий бальзам для тела Shea Formula</p>
+            </div>
+        </div>
+
+        <div class="col-lg-5 product-list__price">
+            <div class="product-amount text_basket-right">
+                1 шт.
+            </div>
+
+            <span class="product-list__price-value text_basket-right">18760 ₸</span>
+            <a href="#" class="product-list__close text_basket-right"><i class="rocket-close-2"></i></a>
+        </div>
+    </div>
+</section>
+            <section class="aside-guide">
+    <h2>Aside block</h2>
+    <div class="aside">
+        <div class="aside__cost">
+            <span class="aside__cost-text">Стоимость без доставки</span>
+            <span class="aside__total_value">54 560 ₸</span>
+        </div>
+        <button class="button button_cost">К доставке и оплате</button>
+    </div>
+        <span class="aside__title">Итог заказа</span>
+        <div class="aside__promo">
+            <span class="aside__promo_title">Есть промо-код?</span>
+            <input class="input promo__input input_theme_redline" type="text" name="cform__promo" placeholder="Введите промо-код">
+            <div class="bill__items">
+                <span class="bill__items_text">Товары</span>
+                <span class="bill__items_value">34 560 ₸</span>
+            </div>
+            <div class="bill__delivery">
+                <span class="bill__delivery_text">Доставка</span>
+                <span class="bill__delivery_value">850 ₸</span>
+            </div>
+            <div class="aside__total">
+                <span class="aside__total_text">Итоговая сумма</span>
+                <span class="aside__total_value">56 600 ₸</span>
+            </div>
+            <button class="button button_pay">Оплатить</button>
+        </div>
+</section>
+            <div class="item">
+    <div class="flag">
+        <div class="item__flag">
+            <span class="item__discount" >30%</span>
+        </div>
+    </div>
+    <a class="item__link" href="">
+        <div class="item__link_img_main">
+            <img class="item__link_img"  src="assets/img/7ba1ae07e703af3b31f0fa31a46ec790b9ab1286.png" alt="">
+            <br>
+        </div>
+        <div class="item__link_title">
+            <span class="item__link_title_text">YVES SAINT LAURENT</span>
+        </div>
+    </a>
+    <div class="item__birka">
+        <img class="item__birka_img" src="../../../assets/img/sales/sales_bg.png" alt="" width="96" height="24">
+        <span class="item__birka_text">Бестселлер</span>
+    </div>
+    <p class="item__description">Тональный крем Touche Eclat Le Teint</p>
+    <div class="item__price">
+        <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+            <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+        </button>
+        <div class="item__price_original item__price_inline"><s style="color:#e00985"><span class="item__price_original_text">23 904</span></s></div>
+    </div>
+</div>
+
+            <section class="buttons">
+    <h2>Buttons:</h2>
+    <div class="buttons__item">
+        <button class="button button_white button_small">Заказать звонок</button>
+        <p>type #1 - class: .button .button_white .button_small </p>
+    </div>
+    <div class="buttons__item">
+        <button class="button button_white button_left-ico button_basket" onclick="demoDisplay()" id="basket_icon"><i class="rocket-shop-bag button__ico_medium button__ico_left-ico"></i>Корзина <div class="button__circle-text">3</div></button>
+        <p>type #2 - class: button .button_white .button_left-ico .button_basket</p>
+    </div>
+    <div class="buttons__item">
+        <button class="button button_large">Вперед за покупками!</button>
+        <p>type #3 - class: .button .button_large</p>
+    </div>
+    <div class="buttons__item">
+        <button class="button button_gray button_right-ico">18 760 ₸<div class="button__line"></div>
+            <i class="rocket-shop-bag_plus button__ico_right-ico "></i>
+        </button>
+        <p>type #4 - class: .button .button_gray .button_right-ico</p>
+    </div>
+    <div class="buttons__item">
+        <button class="button button_inactive">18 760 ₸</button>
+        <p>type #5 - class: .button .button_inactive</p>
+    </div>
+    <div class="buttons__item">
+        <button class="button button_right-ico">18 760 ₸<div class="button__line"></div>
+            <i class="rocket-shop-bag_plus button__ico_right-ico button__ico_white" ></i>
+        </button>
+        <p>type #6 - class: .button .button_right-ico</p>
+    </div>
+    <div class="buttons__item">
+        <button class="button button_big button_right-ico">18 760 ₸<div class="button__line button__line_long"></div>
+            <i class="rocket-shop-bag_plus button__ico_right-ico button__ico_white" ></i>
+        </button>
+        <p>type #7 - class: .button .button_big .button_right-ico</p>
+    </div>
+    <div class="buttons__item">
+        <button class="button button_gray button_medium">Добавить</button>
+        <p>type #8 - class: .button .button_gray .button_medium</p>
+    </div>
+</section>
+
+
+            <h2>Pagination:</h2>
+<div class="pagination">
+    <div class="pagination__page pagination__page_active">1</div>
+    <div class="pagination__page">2</div>
+    <div class="pagination__page">3</div>
+    <div class="pagination__page">4</div>
+    <div class="pagination__page">5</div>
+    <div class="pagination__dots">. . .</div>
+    <div class="pagination__page">12</div>
+</div>
+<hr/>
+        </div>
+    </div>
+    <h3>Step #1</h3>
+<div class="page progress page_full">
+<div class="page__content">
+    <div class="progress__steps">
+        <span class="progress__steps_text progress__steps_text_active">1 Товары в корзине</span>
+        <hr class="progress__steps_line">
+        <span class="progress__steps_text">2 Доставка и оплата</span>
+        <hr class="progress__steps_line ">
+        <span class="progress__steps_text ">3 Завершение заказа</span>
+    </div>
+</div>
+</div>
+    <br>
+    <br>
+<h3>Step #2</h3>
+<div class="page progress page_full">
+    <div class="page__content">
+        <div class="progress__steps">
+            <span class="progress__steps_text progress__steps_text_active">1 Товары в корзине</span>
+            <hr class="progress__steps_line progress__steps_line_active">
+            <span class="progress__steps_text progress__steps_text_active">2 Доставка и оплата</span>
+            <hr class="progress__steps_line ">
+            <span class="progress__steps_text ">3 Завершение заказа</span>
+        </div>
+    </div>
+</div>
+    <br>
+    <br>
+<h3>Step #3</h3>
+<div class="page progress page_full">
+    <div class="page__content">
+        <div class="progress__steps">
+            <span class="progress__steps_text progress__steps_text_active">1 Товары в корзине</span>
+            <hr class="progress__steps_line progress__steps_line_active">
+            <span class="progress__steps_text progress__steps_text_active">2 Доставка и оплата</span>
+            <hr class="progress__steps_line progress__steps_line_active">
+            <span class="progress__steps_text progress__steps_text_active">3 Завершение заказа</span>
+        </div>
+    </div>
+</div>
+
+
+    <script src="assets/js/price/price.js"></script>
+</body>
+</html>
