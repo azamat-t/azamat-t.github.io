@@ -1,114 +1,676 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>WebSite</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-    <header class="header">
-    <div class="header__icons">
-        <img src="assets/img/barber.png" class="header__item" alt="logo">
-        <img src="assets/img/barber.png" class="header__item" alt="logo">
-        <img src="assets/img/barber.png" class="header__item" alt="logo">
-        <img src="assets/img/barber.png" class="header__item" alt="logo">
-        <img src="assets/img/barber.png" class="header__item" alt="logo">
-        <img src="assets/img/barber.png" class="header__item" alt="logo">
-    </div>
-</header>
-    <section class="our-work">
-    <div class="our-work__title">
-        <div class="title title_kaushan">What we do</div>
-        <div class="title title_bold">SOME OF OUR WORK</div>
-        <div class="line "></div>
-        <div class="info info_regular info_center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
-    </div>
-</section>
-    <section class="portfolio">
-    <img src="assets/img/port1.jpg" class="portfolio__img" alt="">
-    <img src="assets/img/port2.jpg" class="portfolio__img" alt="">
-    <img src="assets/img/port3.jpg" class="portfolio__img portfolio__img_vertcl" alt="">
-    <img src="assets/img/port4.jpg" class="portfolio__img" alt="">
-    <img src="assets/img/port5.jpg" class="portfolio__img" alt="">
-    <img src="assets/img/port6.jpg" class="portfolio__img" alt="">
-    <img src="assets/img/port7.jpg" class="portfolio__img" alt="">
-</section>
-    <section class="autors">
-    <button class="btn autors__slide-left">
-        <img src="assets/img/left1.png" class="btn__slide" alt="">
-    </button>
-    <div class="autors__img">
-        <img src="assets/img/autor1.jpeg" class="autors__img_big" alt="">
-    </div>
-    <div class="autors__info">
-        <div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi cupiditate dicta doloremque enim exercitationem expedita itaque iusto maiores minus molestiae molestias nulla reiciendis rerum similique sit, ut veritatis voluptas.</div>
-        <div class="title title_kaushan autors__name-item"><div class="line line_left autors_line"></div><span class="background-masker autors__name">Joshua Earle</span></div>
-    </div>
-    <button class="btn autors__slide-right">
-        <img src="assets/img/right2.png" class="btn__slide btn_right" alt="">
-    </button>
-</section>
-    
-    <section class="happy-clients">
-    <div class="happy-clients__title">
-        <div class="title title_kaushan">Happy Clients</div>
-        <div class="title title_bold">WHAT PEOPLE SAY</div>
-        <div class="line"></div>
-    </div>
-    <div class="clients clients_top-left">
-        <div class="clients__img">
-            <img src="assets/img/download.jpeg" class="clients__img_small" alt="">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Big Sky Capital VC</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.ico" rel="icon" />
+    <link href="assets/img/favicon.ico" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: Plato
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/plato-responsive-bootstrap-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- ======= Hero Section ======= -->
+      <section id="hero">
+        <div class="hero-container" data-aos="fade-up">
+          <div class="col-lg-4 col-md-4 col-6">
+            <img
+              src="assets/img/BigSkyCapital.png"
+              class="img-fluid"
+              alt=""
+              data-aos="fade-up"
+            />
+          </div>
+          <h1>
+            We Are Big Sky Thinkers. <br />
+            We Dream Big.
+          </h1>
+          <a href="#news" class="btn-get-started scrollto"
+            ><i class="bx bx-chevron-down"></i
+          ></a>
         </div>
-        <div class="clients__info">
-            <h5 class="title">Matthew Dix</h5>
-            <h5 class="info">Graphic Design</h5>
-            <div class="line line_left"></div>
-            <p class="info info_regular">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim.</p>
+      </section>
+      <!-- End Hero -->
+
+      <!-- ======= Header ======= -->
+      <header id="header" class="d-flex align-items-center">
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="assets/img/logo-mini-white.png"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+
+          <nav id="navbar" class="navbar">
+            <ul>
+              <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li> -->
+              <li><a class="nav-link scrollto" href="#news">News</a></li>
+              <li>
+                <a class="nav-link scrollto" href="#podcast">Podcast</a>
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="#investment">Portfolio</a>
+              </li>
+
+              <li><a class="nav-link scrollto" href="#team">Team</a></li>
+              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+          <!-- .navbar -->
         </div>
-    </div>
-    <div class="clients clients_top-right">
-        <div class="clients__img">
-            <img src="assets/img/autor2.jpeg" class="clients__img_small" alt="">
+      </header>
+      <!-- End Header -->
+
+      <main id="main">
+        <!-- ======= Features Section ======= -->
+        <section id="news" class="features">
+          <div class="container">
+            <div class="section-title" data-aos="fade-down">
+              <span>News</span>
+              <h2>News</h2>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 mb-3 d-flex align-items-stretch">
+                <div class="card" data-aos="fade-up">
+                  <img
+                    src="assets/img/blog/111.jpg.webp"
+                    class="card-img-top features-img"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="card-text">Being ready for a VC investment</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mb-3 mt-5 mt-md-0 d-flex align-items-stretch"
+              >
+                <div class="card" data-aos="fade-up" data-aos-delay="150">
+                  <img
+                    src="assets/img/blog/222.jpg.webp"
+                    class="card-img-top features-img"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Harnessing the Future: An Exploration of B2B SaaS
+                      Enterprise AI Solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mb-3 mt-5 mt-lg-0 d-flex align-items-stretch"
+              >
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                  <img
+                    src="assets/img/blog/333.jpg.webp"
+                    class="card-img-top features-img"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      HeroStudy Raised $452,000 with BSC as Lead Investor
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mb-3 mt-5 mt-md-0 d-flex align-items-stretch"
+              >
+                <div class="card" data-aos="fade-up" data-aos-delay="450">
+                  <img
+                    src="assets/img/blog/444.jpg.webp"
+                    class="card-img-top features-img"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="card-text">Forbes article on Big Sky Capital</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mb-3 mt-5 mt-md-0 d-flex align-items-stretch"
+              >
+                <div class="card" data-aos="fade-up" data-aos-delay="600">
+                  <img
+                    src="assets/img/blog/555.jpg.webp"
+                    class="card-img-top features-img"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Article on Big Sky Capital in VC Journal
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mb-3 mt-5 mt-lg-0 d-flex align-items-stretch"
+              >
+                <div class="card" data-aos="fade-up" data-aos-delay="750">
+                  <img
+                    src="assets/img/blog/666.jpg.webp"
+                    class="card-img-top features-img"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <p class="card-text">
+                      Kwaaka secures $235,000 in Pre-Seed Round
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-end my-3">
+              <a
+                href="#"
+                data-aos="fade-up"
+                data-aos-delay="750"
+                class="btn btn-light text-right"
+                >See more
+                <i class="bx bx-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- End Features Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="podcast" class="portfolio section-bg">
+          <div class="container">
+            <div class="section-title" data-aos="fade-down">
+              <span>Podcast</span>
+              <h2>Podcast</h2>
+            </div>
+
+            <div
+              class="row portfolio-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap text-center">
+                  <img
+                    src="assets/img/portfolio/mqdefault.jpg"
+                    class="portfolio-img"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <p>
+                      Ep. 1 - Jason Pard, Co-founder & Managing Partner at
+                      Aksara Ventures
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap text-center">
+                  <img
+                    src="assets/img/portfolio/mqdefault-2.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <p>Ep. 2 - Radek Jezbera - CEO and Co-Founder of Kilde</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap text-center">
+                  <img
+                    src="assets/img/portfolio/mqdefault-3.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <p>Ep. 3 - Yerjan Ryskali - CEO and Founder of Clockster</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-end my-3">
+              <a
+                href="#"
+                data-aos="fade-up"
+                data-aos-delay="750"
+                class="btn btn-light text-right"
+                >See more
+                <i class="bx bx-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- End Portfolio Section -->
+
+        <!-- ======= Investment Section ======= -->
+        <section id="investment" class="features">
+          <div class="container">
+            <div class="section-title mb-5" data-aos="fade-down">
+              <span>Investment Portfolio</span>
+              <h2>Investment Portfolio</h2>
+              <p>A Partnership that Supports Exceptional Founders.</p>
+            </div>
+            <div class="row">
+              <div
+                class="col-lg-4 col-md-6 mb-3 d-flex align-items-center justify-content-center mb-5 pb-5"
+              >
+                <img
+                  src="assets/img/investment/1.png.webp"
+                  class="investment-img"
+                  alt="..."
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mb-3 d-flex align-items-center justify-content-center mb-5 pb-5"
+              >
+                <img
+                  src="assets/img/investment/2.png.webp"
+                  class="investment-img"
+                  alt="..."
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mb-3 d-flex align-items-center justify-content-center mb-5 pb-5"
+              >
+                <img
+                  src="assets/img/investment/3.png.webp"
+                  class="investment-img"
+                  alt="..."
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mb-3 d-flex align-items-center justify-content-center mb-5 pb-5"
+              >
+                <img
+                  src="assets/img/investment/4.webp"
+                  class="investment-img"
+                  alt="..."
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mb-3 d-flex align-items-center justify-content-center mb-5 pb-5"
+              >
+                <img
+                  src="assets/img/investment/5.webp"
+                  class="investment-img"
+                  alt="..."
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mb-3 d-flex align-items-center justify-content-center mb-5 pb-5"
+              >
+                <img
+                  src="assets/img/investment/6.webp"
+                  class="investment-img"
+                  alt="..."
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mb-3 d-flex align-items-center justify-content-center mb-5 pb-5"
+              >
+                <img
+                  src="assets/img/investment/7.webp"
+                  class="investment-img"
+                  alt="..."
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mb-3 d-flex align-items-center justify-content-center mb-5 pb-5"
+              >
+                <img
+                  src="assets/img/investment/8.webp"
+                  class="investment-img"
+                  alt="..."
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mb-3 d-flex align-items-center justify-content-center mb-5 pb-5"
+              >
+                <img
+                  src="assets/img/investment/9.webp"
+                  class="investment-img"
+                  alt="..."
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mb-3 d-flex align-items-center justify-content-center mb-5 pb-5"
+              >
+                <img
+                  src="assets/img/investment/10.webp"
+                  class="investment-img"
+                  alt="..."
+                />
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mb-3 d-flex align-items-center justify-content-center mb-5 pb-5"
+              >
+                <img
+                  src="assets/img/investment/11.webp"
+                  class="investment-img"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Investment Section -->
+
+        <!-- ======= Team Section ======= -->
+        <section id="team" class="team">
+          <div class="container">
+            <div class="section-title" data-aos="fade-down">
+              <span>Team</span>
+              <h2>Team</h2>
+            </div>
+
+            <div class="row">
+              <div class="col-xl-3 col-lg-4 col-md-6"></div>
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                  <img src="assets/img/Adil.png" class="img-thumbnail" alt="" />
+                  <div class="member-info">
+                    <div class="member-info-content">
+                      <h4>Adil Nurgozhin</h4>
+                    </div>
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
+                <div class="member" data-aos="fade-up" data-aos-delay="200">
+                  <img src="assets/img/Jahn.png" class="img-thumbnail" alt="" />
+                  <div class="member-info">
+                    <div class="member-info-content">
+                      <h4>Jahn Karsybaev</h4>
+                    </div>
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Team Section -->
+
+        <!-- ======= Contact Us Section ======= -->
+        <section id="contact" class="contact">
+          <div class="container">
+            <div class="section-title" data-aos="fade-down">
+              <span>Contact Us</span>
+              <h2>Contact Us</h2>
+              <p>Got a Big Sky Idea? Submit Your Pitch.</p>
+            </div>
+
+            <div class="row justify-content-center">
+              <div
+                class="col-lg-4 col-md-12"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Our Address</h3>
+                  <p>Astana</p>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mt-4 mt-lg-0"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="info-box">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>info@example.com<br />contact@example.com</p>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 mt-4 mt-lg-0"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="info-box">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Us</h3>
+                  <p>+7000 000 00</p>
+                </div>
+              </div>
+            </div>
+
+            <form
+              action="forms/contact.php"
+              method="post"
+              role="form"
+              class="php-email-form mt-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group mt-3">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  rows="5"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Your message has been sent. Thank you!
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <!-- End Contact Us Section -->
+      </main>
+      <!-- End #main -->
+
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h3>Big Sky Capital</h3>
+                <p>
+                  Astana <br />
+                  Miami<br />
+                  Singapore <br /><br />
+                  <strong>Phone:</strong> +7 0000 0000 00<br />
+                  <strong>Email:</strong> info@example.com<br />
+                </p>
+              </div>
+
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li>
+                    <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="#">Terms of service</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="#">Privacy policy</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="#">Web Design</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="#">Web Development</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="#">Product Management</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="#">Marketing</a>
+                  </li>
+                  <li>
+                    <i class="bx bx-chevron-right"></i>
+                    <a href="#">Graphic Design</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Social Networks</h4>
+                <p>
+                  Cras fermentum odio eu feugiat lide par naso tierra videa
+                  magna derita valies
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"
+                    ><i class="bx bxl-facebook"></i
+                  ></a>
+                  <a href="#" class="instagram"
+                    ><i class="bx bxl-instagram"></i
+                  ></a>
+                  <a href="#" class="google-plus"
+                    ><i class="bx bxl-skype"></i
+                  ></a>
+                  <a href="#" class="linkedin"
+                    ><i class="bx bxl-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="clients__info">
-            <h5 class="title">Nick Karvounis</h5>
-            <h5 class="info">Graphic Design</h5>
-            <div class="line line_left"></div>
-            <p class="info info_regular">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim.</p>
-        </div>
-    </div>
-    <div class="clients clients_btm-left">
-        <div class="clients__img">
-            <img src="assets/img/autor1.jpeg" class="clients__img_small" alt="">
-        </div>
-        <div class="clients__info">
-            <h5 class="title">Jaelynn Castillo</h5>
-            <h5 class="info">Graphic Design</h5>
-            <div class="line line_left"></div>
-            <p class="info info_regular">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim.</p>
-        </div>
-    </div>
-    <div class="clients clients_btm-right">
-        <div class="clients__img">
-            <img src="assets/img/images.jpeg" class="clients__img_small" alt="">
-        </div>
-        <div class="clients__info">
-            <h5 class="title">Mike Petrucci</h5>
-            <h5 class="info">Graphic Design</h5>
-            <div class="line line_left"></div>
-            <p class="info info_regular">Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim.</p>
-        </div>
+      </footer>
+      <!-- End Footer -->
     </div>
 
-    <footer class="footer"></footer>
-</section>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-</body>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
